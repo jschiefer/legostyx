@@ -6,6 +6,9 @@ A [paper about this project](http://doc.cat-v.org/inferno/4th_edition/styx-on-a-
 was published in June 2000. The contents of this repository are the contents of 
 the `legostyx.tar` file described in the paper.
 
+I have made no contributions to the code other than to archive it and add this
+README.
+
 ## Prerequisites
 You need a Lego RCX 2.0 brick and a Lego IR (infrared) tower. Linux
 has kernel support for the IR tower since version 2.6, and (at least
@@ -24,14 +27,14 @@ This will set the permissions to `rw-rw-rw-` when the tower is plugged in.
 
 ## Downloading the firmware
 To download the RCX firmware from Linux, you have to get a hold of the program `firmdl3`,
-which comes with the defunct BrickOs distribution, which is a multitasking operating 
+which comes with the defunct BrickOS distribution, which is a multitasking operating 
 system with development environment for use as an alternative to the standard LEGO(r) 
 Mindstorms RCX firmware. As this software can be a little hard to find, I have included
 a Linux x86_64 binary of the `firmdl3` program in the `bin/` directory of this repo. 
 If you don't trust this binary (and really, you shouldn't!), there is a clone of the 
-original Sourceforge BrickOS source available [in Github](https://github.com/jschiefer/brickOS).
+original Sourceforge BrickOS source available [in Github](https://github.com/jschiefer/BrickOS).
 
-Note that building brickOS and the tools that go with it requires a cross-compiler for
+Note that building BrickOS and the tools that go with it requires a cross-compiler for
 Hitachi H8 processor. Good resources on how to get this going are available
 [on the web](https://symbolicdomain.wordpress.com/2016/05/29/brickos/).
 
