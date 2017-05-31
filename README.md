@@ -27,15 +27,15 @@ This will set the permissions to `rw-rw-rw-` when the tower is plugged in.
 
 ## Downloading the firmware
 To download the RCX firmware from Linux, you have to get a hold of the program `firmdl3`,
-which comes with the defunct BrickOS distribution, which is a multitasking operating 
+which is a tool that comes with BrickOS. BrickOS is a multitasking operating 
 system with development environment for use as an alternative to the standard LEGO(r) 
-Mindstorms RCX firmware. As this software can be a little hard to find, I have included
+Mindstorms RCX firmware. As this software can be a little hard to figure out, I have included
 a Linux x86_64 binary of the `firmdl3` program in the `bin/` directory of this repo. 
-If you don't trust this binary (and really, you shouldn't!), there is a clone of the 
-original Sourceforge BrickOS source available [in Github](https://github.com/jschiefer/BrickOS).
 
-Note that building BrickOS and the tools that go with it requires a cross-compiler for
-Hitachi H8 processor. Good resources on how to get this going are available
+If you don't trust this binary (and really, you shouldn't), there is a clone of the 
+original Sourceforge BrickOS source available [in Github](https://github.com/jschiefer/BrickOS).
+Building this stuff requires a cross-compiler for
+the Hitachi H8 processor. Good resources on how to get this going are available
 [on the web](https://symbolicdomain.wordpress.com/2016/05/29/brickos/).
 
 Now that we have all the bits and pieces assembled, we can finally load the firmware
@@ -47,3 +47,4 @@ firmdl3 --tty=/dev/usb/legousbtower2 ./styx.srec
 After a while of noodling, the RCX will display the "running person" icon and the 
 number 0000 on the display.
 
+This is as far as I got with this for the moment.
